@@ -8,3 +8,11 @@ sudo apt-get install fish
 # set fish as the default shell
 fish=$(which fish)
 sh -s ${fish}
+
+# installing golang
+download_path=$HOME/Downloads
+mkdir -P ${download_path}
+wget -P ${download_path} https://golang.org/dl/go1.14.4.linux-amd64.tar.gz
+
+# set export go for fish shell
+set -x PATH $PATH /usr/local/go/bin/
