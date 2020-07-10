@@ -45,3 +45,10 @@ chsh -s /bin/zsh
 # syntax highlight 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
 echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
+
+# zsh auto completion
+## This need manual edit on .zshrc file to add the plugin inside `plugin()`
+## Example: `plugin(git zsh-autosuggestion)
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+
